@@ -1,0 +1,1894 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>أسماء عاطف | Graphic Designer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        /* =========================
+           GLOBAL
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --bg: #09070f;
+            --bg2: #110d1d;
+            --card: rgba(255,255,255,0.055);
+            --purple: #9b5cff;
+            --purple2: #6f32d9;
+            --gold: #d8ad62;
+            --white: #ffffff;
+            --text: #f4f1f8;
+            --muted: #aaa2b5;
+            --border: rgba(255,255,255,0.10);
+        }
+
+        body {
+            background:
+                radial-gradient(circle at 10% 10%, rgba(155,92,255,.15), transparent 30%),
+                radial-gradient(circle at 90% 30%, rgba(216,173,98,.10), transparent 25%),
+                var(--bg);
+
+            color: var(--text);
+            font-family: "Cairo", sans-serif;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1150px, 92%);
+            margin: auto;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .section-title span {
+            color: var(--gold);
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .section-title h2 {
+            font-size: 42px;
+            margin-top: 10px;
+        }
+
+        .section-title p {
+            color: var(--muted);
+            max-width: 650px;
+            margin: 15px auto 0;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        header {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1000;
+
+            background: rgba(9,7,15,.75);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        nav {
+            height: 75px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 23px;
+            font-weight: 800;
+        }
+
+        .logo span {
+            color: var(--purple);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #ddd7e3;
+            transition: .3s;
+            font-size: 15px;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+        .menu-btn {
+            display: none;
+            border: 0;
+            background: transparent;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.1fr .9fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text small {
+            color: var(--gold);
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(45px, 7vw, 82px);
+            line-height: 1.05;
+            margin: 18px 0;
+            font-weight: 800;
+        }
+
+        .hero-text h1 span {
+            color: var(--purple);
+        }
+
+        .hero-text h3 {
+            font-size: 25px;
+            color: #ddd7e3;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            color: var(--muted);
+            line-height: 2;
+            max-width: 650px;
+            font-size: 16px;
+        }
+
+        .buttons {
+            margin-top: 35px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 26px;
+            border-radius: 50px;
+            border: 1px solid var(--border);
+            transition: .3s;
+            font-weight: 700;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--purple), var(--purple2));
+            box-shadow: 0 10px 35px rgba(155,92,255,.25);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 40px rgba(155,92,255,.4);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+
+        /* =========================
+           HERO CARD
+        ========================= */
+
+        .hero-card {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-card {
+            width: 340px;
+            height: 430px;
+            border-radius: 35px;
+
+            background:
+                linear-gradient(145deg,
+                rgba(155,92,255,.25),
+                rgba(216,173,98,.08)),
+                var(--card);
+
+            border: 1px solid rgba(255,255,255,.13);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+            overflow: hidden;
+
+            box-shadow:
+                0 30px 100px rgba(0,0,0,.5);
+        }
+
+        .profile-card::before {
+            content: "";
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            background: var(--purple);
+            filter: blur(100px);
+            opacity: .25;
+        }
+
+        .profile-icon {
+            width: 145px;
+            height: 145px;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: linear-gradient(135deg,var(--purple),var(--gold));
+            font-size: 65px;
+            color: white;
+
+            position: relative;
+            z-index: 1;
+
+            box-shadow: 0 20px 50px rgba(155,92,255,.3);
+        }
+
+        .profile-card h2 {
+            margin-top: 25px;
+            font-size: 28px;
+        }
+
+        .profile-card p {
+            color: var(--muted);
+            margin-top: 5px;
+        }
+
+        .designer-badge {
+            margin-top: 20px;
+            padding: 8px 18px;
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            color: var(--gold);
+            font-size: 13px;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-box {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 35px;
+            border-radius: 25px;
+        }
+
+        .about-box h3 {
+            font-size: 27px;
+            margin-bottom: 18px;
+        }
+
+        .about-box p {
+            color: var(--muted);
+            line-height: 2;
+        }
+
+        .info-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .info {
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 18px 20px;
+            border-radius: 15px;
+
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .info i {
+            width: 45px;
+            height: 45px;
+            border-radius: 12px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: rgba(155,92,255,.12);
+            color: var(--purple);
+        }
+
+        .info small {
+            color: var(--muted);
+            display: block;
+        }
+
+
+        /* =========================
+           SKILLS
+        ========================= */
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+
+        .skill {
+            padding: 30px 20px;
+            text-align: center;
+
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+
+            transition: .3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-8px);
+            border-color: rgba(155,92,255,.5);
+        }
+
+        .skill i {
+            font-size: 35px;
+            color: var(--purple);
+            margin-bottom: 15px;
+        }
+
+        .skill h3 {
+            font-size: 18px;
+        }
+
+        .skill p {
+            color: var(--muted);
+            font-size: 13px;
+            margin-top: 7px;
+        }
+
+
+        /* =========================
+           PORTFOLIO
+        ========================= */
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+        }
+
+        .design-card {
+            position: relative;
+            height: 270px;
+            overflow: hidden;
+            border-radius: 20px;
+
+            background: #15111d;
+            border: 1px solid var(--border);
+
+            cursor: pointer;
+        }
+
+        .design-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            transition: .5s;
+        }
+
+        .design-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .design-overlay {
+            position: absolute;
+            inset: 0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+            padding: 20px;
+
+            background:
+                linear-gradient(
+                    transparent,
+                    rgba(0,0,0,.9)
+                );
+
+            opacity: 0;
+            transition: .3s;
+        }
+
+        .design-card:hover .design-overlay {
+            opacity: 1;
+        }
+
+        .design-overlay h3 {
+            font-size: 18px;
+        }
+
+        .design-overlay span {
+            color: var(--gold);
+            font-size: 12px;
+        }
+
+
+        /* =========================
+           CERTIFICATES
+        ========================= */
+
+        .certificates {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 30px;
+        }
+
+        .certificate {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 25px;
+            overflow: hidden;
+
+            transition: .3s;
+        }
+
+        .certificate:hover {
+            transform: translateY(-7px);
+            border-color: rgba(216,173,98,.5);
+        }
+
+        .certificate-image {
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .certificate-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+            transition: .5s;
+        }
+
+        .certificate-image img:hover {
+            transform: scale(1.04);
+        }
+
+        .certificate-info {
+            padding: 25px;
+        }
+
+        .certificate-info h3 {
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .certificate-info p {
+            color: var(--muted);
+            line-height: 1.9;
+            font-size: 14px;
+        }
+
+        .certificate-info strong {
+            color: white;
+        }
+
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .wh {
+            color: #4bf717;
+          }
+
+        .contact-box {
+            max-width: 850px;
+            margin: auto;
+
+            text-align: center;
+            padding: 60px 30px;
+
+            border-radius: 30px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(155,92,255,.15),
+                    rgba(216,173,98,.08)
+                );
+
+            border: 1px solid var(--border);
+        }
+
+        .contact-box h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .contact-box p {
+            color: var(--muted);
+            margin-bottom: 30px;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .social {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: var(--card);
+            border: 1px solid var(--border);
+
+            transition: .3s;
+        }
+
+        .social:hover {
+            transform: translateY(-5px);
+            color: var(--gold);
+            border-color: var(--gold);
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            padding: 30px 0;
+            text-align: center;
+
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        footer span {
+            color: var(--purple);
+        }
+
+
+        /* =========================
+           IMAGE MODAL
+        ========================= */
+
+        .modal {
+            position: fixed;
+            inset: 0;
+
+            background: rgba(0,0,0,.9);
+
+            display: none;
+            align-items: center;
+            justify-content: center;
+
+            z-index: 2000;
+            padding: 20px;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal img {
+            max-width: 95%;
+            max-height: 90vh;
+            border-radius: 15px;
+            box-shadow: 0 20px 100px rgba(0,0,0,.8);
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 25px;
+            left: 30px;
+
+            width: 45px;
+            height: 45px;
+
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,.2);
+
+            background: rgba(255,255,255,.1);
+            color: white;
+
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+
+        /* =========================
+           SCROLL BUTTON
+        ========================= */
+
+        .top-btn {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+
+            width: 45px;
+            height: 45px;
+
+            border-radius: 50%;
+            border: 0;
+
+            background: var(--purple);
+            color: white;
+
+            cursor: pointer;
+            display: none;
+
+            z-index: 900;
+        }
+
+        .top-btn.show {
+            display: block;
+        }
+
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+
+        @media(max-width:900px) {
+
+            .hero-content,
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding-top: 120px;
+            }
+
+            .hero-text {
+                text-align: center;
+            }
+
+            .hero-text p {
+                margin: auto;
+            }
+
+            .buttons {
+                justify-content: center;
+            }
+
+            .skills {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .portfolio-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .certificates {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-card {
+                width: 300px;
+                height: 380px;
+            }
+        }
+
+
+        @media(max-width:600px) {
+
+            section {
+                padding: 75px 0;
+            }
+
+            .section-title h2 {
+                font-size: 32px;
+            }
+
+            .nav-links {
+                position: absolute;
+                top: 75px;
+                right: 0;
+                left: 0;
+
+                background: rgba(9,7,15,.97);
+
+                flex-direction: column;
+                align-items: center;
+
+                padding: 25px;
+
+                display: none;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .skills {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .design-card {
+                height: 350px;
+            }
+
+            .hero-text h1 {
+                font-size: 48px;
+            }
+
+            .contact-box h2 {
+                font-size: 28px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header>
+
+    <div class="container">
+
+        <nav>
+
+            <div class="logo">
+                Asmaa<span>.</span>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li>
+                    <a href="#home">الرئيسية</a>
+                </li>
+
+                <li>
+                    <a href="#about">نبذة عني</a>
+                </li>
+
+                <li>
+                    <a href="#skills">مهاراتي</a>
+                </li>
+
+                <li>
+                    <a href="#portfolio">أعمالي</a>
+                </li>
+
+                <li>
+                    <a href="#certificates">الشهادات</a>
+                </li>
+
+                <li>
+                    <a href="#contact">تواصل معي</a>
+                </li>
+
+            </ul>
+
+            <button class="menu-btn" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero" id="home">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+
+            <div class="hero-text">
+
+                <small>
+                    WELCOME TO MY PORTFOLIO
+                </small>
+
+                <h1>
+                    أسماء <span>عاطف</span>
+                </h1>
+
+                <h3>
+                    Graphic Designer 🎨
+                </h3>
+
+                <p>
+                    مصممة جرافيك شغوفة بتحويل الأفكار إلى تصاميم
+                    إبداعية ومميزة. أهتم بالتفاصيل وأسعى دائمًا
+                    لتقديم تصميم يجمع بين الجمال والاحترافية.
+                </p>
+
+
+                <div class="buttons">
+
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fa-solid fa-palette"></i>
+                        مشاهدة أعمالي
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        تواصل معي
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <div class="profile-card">
+
+                    <div class="profile-icon">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+
+                    <h2>
+                        Asmaa Atef
+                    </h2>
+
+                    <p>
+                        Graphic Designer
+                    </p>
+
+                    <div class="designer-badge">
+                        Creative • Passionate • Designer
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>ABOUT ME</span>
+
+            <h2>
+                نبذة عني
+            </h2>
+
+            <p>
+                تعرف أكثر على أسماء وخبرتها واهتماماتها في مجال التصميم.
+            </p>
+
+        </div>
+
+
+        <div class="about-grid">
+
+
+            <div class="about-box">
+
+                <h3>
+                    شغفي هو التصميم ✨
+                </h3>
+
+                <p>
+                    أنا أسماء عاطف، مصممة جرافيك وطالبة في الصف
+                    الثالث الجامعي، أمتلك شغفًا كبيرًا بمجال التصميم
+                    وصناعة المحتوى البصري.
+                    أحب ابتكار أفكار جديدة وتحويلها إلى تصميمات
+                    جذابة تساعد على توصيل الرسالة بشكل واضح ومميز.
+                </p>
+
+            </div>
+
+
+            <div class="info-list">
+
+                <div class="info">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <div>
+                        <small>الاسم</small>
+                        <strong>أسماء عاطف</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="info">
+
+                    <i class="fa-solid fa-cake-candles"></i>
+
+                    <div>
+                        <small>العمر</small>
+                        <strong>20 سنة</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="info">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                    <div>
+                        <small>التعليم</small>
+                        <strong>طالبة بالصف الثالث الجامعي</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="info">
+
+                    <i class="fa-solid fa-pen-nib"></i>
+
+                    <div>
+                        <small>التخصص</small>
+                        <strong>Graphic Design</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section id="skills">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>MY SKILLS</span>
+
+            <h2>
+                مهاراتي
+            </h2>
+
+        </div>
+
+
+        <div class="skills">
+
+
+            <div class="skill">
+
+                <i class="fa-solid fa-pen-nib"></i>
+
+                <h3>
+                    Graphic Design
+                </h3>
+
+                <p>
+                    تصميمات إبداعية واحترافية
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <i class="fa-solid fa-image"></i>
+
+                <h3>
+                    Social Media Design
+                </h3>
+
+                <p>
+                    تصميم منشورات السوشيال ميديا
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <i class="fa-solid fa-palette"></i>
+
+                <h3>
+                    Visual Identity
+                </h3>
+
+                <p>
+                    الهوية البصرية والعلامات التجارية
+                </p>
+
+            </div>
+
+
+            <div class="skill">
+
+                <i class="fa-solid fa-lightbulb"></i>
+
+                <h3>
+                    Creative Thinking
+                </h3>
+
+                <p>
+                    أفكار وحلول تصميمية مبتكرة
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PORTFOLIO
+========================= -->
+
+<section id="portfolio">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>MY WORK</span>
+
+            <h2>
+                أعمالي التصميمية
+            </h2>
+
+            <p>
+                مجموعة من أفضل التصميمات والأعمال الإبداعية.
+            </p>
+
+        </div>
+
+
+        <div class="portfolio-grid">
+
+
+            <!-- DESIGN 01 -->
+            <div class="design-card">
+
+                <img src="design1.jpg"
+                     alt="تصميم 1">
+
+                <div class="design-overlay">
+
+                    <h3>
+                        Design 01
+                    </h3>
+
+                    <span>
+                        Graphic Design
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN 02 -->
+            <div class="design-card">
+
+                <img src="design2.jpg"
+                     alt="تصميم 2">
+
+                <div class="design-overlay">
+
+                    <h3>
+                        Design 02
+                    </h3>
+
+                    <span>
+                        Social Media Design
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN 03 -->
+            <div class="design-card">
+
+                <img src="design3.jpg"
+                     alt="تصميم 3">
+
+                <div class="design-overlay">
+
+                    <h3>Design 03</h3>
+
+                    <span>
+                        Graphic Design
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN 04 -->
+            <div class="design-card">
+
+                <img src="design4.jpg"
+                     alt="تصميم 4">
+
+                <div class="design-overlay">
+
+                    <h3>Design 04</h3>
+
+                    <span>
+                        Creative Design
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN 05 -->
+            <div class="design-card">
+
+                <img src="design5.jpg"
+                     alt="تصميم 5">
+
+                <div class="design-overlay">
+
+                    <h3>Design 05</h3>
+
+                    <span>
+                        Social Media
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN 06 -->
+            <div class="design-card">
+
+                <img src="design6.jpg"
+                     alt="تصميم 6">
+
+                <div class="design-overlay">
+
+                    <h3>Design 06</h3>
+
+                    <span>
+                        Graphic Design
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN 07 -->
+            <div class="design-card">
+
+                <img src="design7.jpg"
+                     alt="تصميم 7">
+
+                <div class="design-overlay">
+
+                    <h3>Design 07</h3>
+
+                    <span>
+                        Creative Design
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN 08 -->
+            <div class="design-card">
+
+                <img src="design8.jpg"
+                     alt="تصميم 8">
+
+                <div class="design-overlay">
+
+                    <h3>Design 08</h3>
+
+                    <span>
+                        Graphic Design
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN 09 -->
+            <div class="design-card">
+
+                <img src="design9.jpg"
+                     alt="تصميم 9">
+
+                <div class="design-overlay">
+
+                    <h3>Design 09</h3>
+
+                    <span>
+                        Social Media
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN 10 -->
+            <div class="design-card">
+
+                <img src="design10.jpg"
+                     alt="تصميم 10">
+
+                <div class="design-overlay">
+
+                    <h3>Design 10</h3>
+
+                    <span>
+                        Branding
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN 11 -->
+            <div class="design-card">
+
+                <img src="design11.jpg"
+                     alt="تصميم 11">
+
+                <div class="design-overlay">
+
+                    <h3>Design 11</h3>
+
+                    <span>
+                        Graphic Design
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN 12 -->
+            <div class="design-card">
+
+                <img src="design12.jpg"
+                     alt="تصميم 12">
+
+                <div class="design-overlay">
+
+                    <h3>Design 12</h3>
+
+                    <span>
+                        Creative Design
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN 13 -->
+            <div class="design-card">
+
+                <img src="design13.jpg"
+                     alt="تصميم 13">
+
+                <div class="design-overlay">
+
+                    <h3>Design 13</h3>
+
+                    <span>
+                        Social Media
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN 14 -->
+            <div class="design-card">
+
+                <img src="design14.jpg"
+                     alt="تصميم 14">
+
+                <div class="design-overlay">
+
+                    <h3>Design 14</h3>
+
+                    <span>
+                        Branding
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN 15 -->
+            <div class="design-card">
+
+                <img src="design15.jpg"
+                     alt="تصميم 15">
+
+                <div class="design-overlay">
+
+                    <h3>Design 15</h3>
+
+                    <span>
+                        Graphic Design
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- DESIGN 16 -->
+            <div class="design-card">
+
+                <img src="design16.jpg"
+                     alt="تصميم 16">
+
+                <div class="design-overlay">
+
+                    <h3>Design 16</h3>
+
+                    <span>
+                        Creative Design
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CERTIFICATES
+========================= -->
+
+<section id="certificates">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>CERTIFICATES</span>
+
+            <h2>
+                الشهادات
+            </h2>
+
+            <p>
+                الشهادات والتقديرات التي حصلت عليها أسماء.
+            </p>
+
+        </div>
+
+
+        <div class="certificates">
+
+
+            <!-- CERTIFICATE 1 -->
+
+            <div class="certificate">
+
+                <div class="certificate-image">
+
+                    <img
+                        src="imagescertificate1.jpg"
+                        alt="شهادة Public Speaking"
+                        class="open-image">
+
+                </div>
+
+                <div class="certificate-info">
+
+                    <h3>
+                        Certificate of Completion
+                    </h3>
+
+                    <p>
+
+                        <strong>الاسم:</strong>
+                        Asmaa Atef
+
+                        <br>
+
+                        <strong>الكورس:</strong>
+                         This is to certify that
+
+                        <br>
+
+                        <strong>الجهة:</strong>
+                        Growth academy
+
+                        <br>
+
+                        <strong>المدرب:</strong>
+                         Doaa Elsherib
+
+                        <br>
+
+                        <strong>التاريخ:</strong>
+                        20/07/2026
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CERTIFICATE 2 -->
+
+            <div class="certificate">
+
+                <div class="certificate-image">
+
+                    <img
+                        src="imagescertificate2.jpg"
+                        alt="شهادة تقدير LEAD Organization"
+                        class="open-image">
+
+                </div>
+
+                <div class="certificate-info">
+
+                    <h3>
+                        شهادة تقدير
+                    </h3>
+
+                    <p>
+
+                        <strong>الاسم:</strong>
+                        Asmaa Atef
+
+                        <br>
+                        <strong>الكورس</strong>
+                        Public Speaking
+                        <br>
+
+                        <strong>الجهة:</strong>
+                       PLAN B
+
+                        <br>
+
+                        <strong>التاريخ:</strong>
+                        06/07/2026
+
+                        <br><br>
+
+                        شهادة تقدير مقدمة تقديرًا لحكمتها المستمر
+                        ومساهمتها القيمة في إنجاح المسيرة،
+                        وما قدمته من دعم ومشاركة كان لها أثر كبير
+                        في نجاح العمل وتحقيق الأهداف.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+        <div class="certificate">
+
+                <div class="certificate-image">
+
+                    <img
+                        src="imagescertificate3.jpg"
+                        alt="شهادة تقدير LEAD Organization"
+                        class="open-image">
+
+                </div>
+
+                <div class="certificate-info">
+
+                    <h3>
+                        شهادة تقدير
+                    </h3>
+
+                    <p>
+
+                        <strong>الاسم:</strong>
+                        Asmaa Atef
+
+                        <br>
+
+                        <strong>الجهة:</strong>
+                        LEAD Organization
+
+                        <br>
+
+                        <strong>التاريخ:</strong>
+                        July 2026
+
+                        <br><br>
+
+                        شهادة تقدير مقدمة تقديرًا لحكمتها المستمر
+                        ومساهمتها القيمة في إنجاح المسيرة،
+                        وما قدمته من دعم ومشاركة كان لها أثر كبير
+                        في نجاح العمل وتحقيق الأهداف.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section id="contact">
+
+    <div class="container">
+
+        <div class="contact-box">
+
+            <h2>
+                Let's Create Something Amazing ✨
+            </h2>
+
+            <p>
+                هل لديك فكرة تصميم؟ يسعدني تحويل فكرتك
+                إلى تصميم إبداعي ومميز.
+            </p>
+
+
+            <div class="wh">
+                <a href="https://wa.me/201143175487?text">  <h3> اضغط للوصول الي واتساب </h3> </a>
+            </div>
+            <br>
+
+            <div class="socials">
+
+                <a href="#" class="social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="social">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" class="social">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="mailto:asmaa@example.com"
+                   class="social">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    © 2026 جميع الحقوق محفوظة
+    <br>
+    تواصل معي
+    <br>
+       <h3> 01143175487</h3>
+    <br>
+
+    Designed by
+    <span>
+        Asmaa Atef
+    </span>
+
+</footer>
+
+
+
+<!-- =========================
+     MODAL
+========================= -->
+
+<div class="modal" id="modal">
+
+    <button class="close-modal" id="closeModal">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <img id="modalImage" src="" alt="">
+
+</div>
+
+
+<button class="top-btn" id="topBtn">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+
+<script>
+
+    /* =========================
+       MOBILE MENU
+    ========================= */
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", () => {
+
+        navLinks.classList.toggle("active");
+
+    });
+
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navLinks.classList.remove("active");
+
+        });
+
+    });
+
+
+
+    /* =========================
+       IMAGE MODAL
+    ========================= */
+
+    const modal = document.getElementById("modal");
+    const modalImage = document.getElementById("modalImage");
+    const closeModal = document.getElementById("closeModal");
+
+
+    document.querySelectorAll(
+        ".design-card img, .open-image"
+    ).forEach(image => {
+
+        image.addEventListener("click", () => {
+
+            modal.classList.add("active");
+
+            modalImage.src = image.src;
+
+        });
+
+    });
+
+
+    closeModal.addEventListener("click", () => {
+
+        modal.classList.remove("active");
+
+    });
+
+
+    modal.addEventListener("click", (e) => {
+
+        if(e.target === modal){
+
+            modal.classList.remove("active");
+
+        }
+
+    });
+
+
+    document.addEventListener("keydown", (e) => {
+
+        if(e.key === "Escape"){
+
+            modal.classList.remove("active");
+
+        }
+
+    });
+
+
+
+    /* =========================
+       SCROLL TOP BUTTON
+    ========================= */
+
+    const topBtn = document.getElementById("topBtn");
+
+
+    window.addEventListener("scroll", () => {
+
+        if(window.scrollY > 500){
+
+            topBtn.classList.add("show");
+
+        }else{
+
+            topBtn.classList.remove("show");
+
+        }
+
+    });
+
+
+    topBtn.addEventListener("click", () => {
+
+        window.scrollTo({
+
+            top: 0,
+            behavior: "smooth"
+
+        });
+
+    });
+
+
+</script>
+
+
+</body>
+</html>
